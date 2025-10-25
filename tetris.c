@@ -25,9 +25,9 @@ typedef struct {
 
 // Função para iniciar fila vazia
 void inicializarFila(Fila *f) {
-    f->inicio = 0
-    f->fim = -1
-    f->qtd = 0
+    f->inicio = 0;
+    f->fim = -1;
+    f->qtd = 0;
 }
 
 // Cria uma nova peça com o tipo aleatório 
@@ -81,7 +81,7 @@ void exibirFila(Fila f) {
 int main() {
     srand(time(NULL)); // Garante peças aleatórias
     Fila fila;
-    iniciarlizarFila(&fila);
+    inicializarFila(&fila);
 
     int opcao, contador = 0;
 
@@ -107,7 +107,7 @@ int main() {
                 inserirPeca(&fila, gerarPeca(contador++));
                 break;
             case 0: 
-                printf("\nSaindo do jogo...\n")
+                printf("\nSaindo do jogo...\n");
                 break;
             default:
                 printf("\nOpção inválida!\n"); 
